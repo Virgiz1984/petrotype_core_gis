@@ -12,8 +12,8 @@ sns.set(style="whitegrid")
 # Загрузка данных
 @st.cache_data
 def load_data():
-    path = r'\\BABAKOV\portal\Северо-Останинское\Вася\Расчёт комплексов литологов\litho_interact.xlsx'
-    return pd.read_excel(path, index_col=None)
+  #  path = r'\\BABAKOV\portal\Северо-Останинское\Вася\Расчёт комплексов литологов\litho_interact.xlsx'
+    return pd.read_excel('litho_interact.xlsx', index_col=None)
 
 st.title("Интерактивная визуализация керновых данных")
 
